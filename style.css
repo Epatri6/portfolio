@@ -1,0 +1,87 @@
+/* Recommended practice */
+* {box-sizing: border-box;}
+
+/*---------------General styling------------*/
+
+/* Text styling */
+header, main, footer {
+  font-family: cursive;
+  text-align: left;
+}
+h2 {font-size: 24px;}
+h3 {font-size: 18px;}
+
+/* Link styling */
+a:link {color:white;}
+a:visited {color:white;}
+a:hover {color:crimson;}
+a:active {color:crimson;}
+
+/* Get rid of gaps in content */
+h2, h3, h1 p {
+  margin: 0;
+}
+
+/* Center webpage */
+div {
+  width: 750px;
+  margin: auto;
+}
+body{background-color: black;}
+
+/*---------------Header styling-------------*/
+
+header {
+  background: black;
+  margin-bottom: 0px;
+}
+
+h1 {
+  color: white;
+  padding: 20px 0px 10px 10px;
+  margin: 0;
+  font-size: 36px;
+}
+
+nav {
+  border-top: 1px solid white;
+  height: 50px;
+  padding: 10px;
+  font-size: 24px;
+  margin: 0;
+  color: #fff;
+}
+
+/*----------------Main styling-------------*/
+
+main {
+  background-color: rgb(167, 1, 1);
+  color: black;
+  margin: 0;
+  padding-top: 10px;
+}
+
+hr {
+  background-color: black;
+  border: 1px black solid;
+}
+
+main h2, main h3, main p {
+  padding-left: 10px;
+}
+
+ol {
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+
+main p, main li {
+  font-size: 14px;
+}
+
+/*--------------Footer styling-------------------*/
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
