@@ -18,7 +18,7 @@ a:hover {color:crimson;}
 a:active {color:crimson;}
 
 /* Get rid of gaps in content */
-h2, h3, h1 p {
+h1, h2, h3, nav, img {
   margin: 0;
 }
 
@@ -36,10 +36,13 @@ header {
   margin-bottom: 0px;
 }
 
+img {
+  padding: 10px 0 0 10px;
+}
+
 h1 {
   color: white;
-  padding: 20px 0px 10px 10px;
-  margin: 0;
+  padding: 5px 0px 5px 10px;
   font-size: 36px;
 }
 
@@ -48,15 +51,14 @@ nav {
   height: 50px;
   padding: 10px;
   font-size: 24px;
-  margin: 0;
   color: #fff;
 }
 
 /*----------------Main styling-------------*/
 
 main {
-  background-color: rgb(167, 1, 1);
-  color: black;
+  background-color: rgb(141, 0, 0);
+  color: white;
   margin: 0;
   padding-top: 10px;
 }
