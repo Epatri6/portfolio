@@ -1,89 +1,83 @@
 /* Recommended practice */
 * {box-sizing: border-box;}
 
-/*---------------General styling------------*/
-
-/* Text styling */
-header, main, footer {
-  font-family: cursive;
-  text-align: left;
-}
-h2 {font-size: 24px;}
-h3 {font-size: 18px;}
-
-/* Link styling */
-a:link {color:white;}
-a:visited {color:white;}
-a:hover {color:crimson;}
-a:active {color:crimson;}
-
-/* Get rid of gaps in content */
-h1, h2, h3, nav, img {
-  margin: 0;
-}
-
-/* Center webpage */
-div {
-  width: 750px;
+/* General Styling */
+.wrapper {
+  width: 100%;
   margin: auto;
 }
-body{background-color: black;}
 
-/*---------------Header styling-------------*/
+p, h1, h2, h3, ol, ul {
+  font-family: cursive;
+}
 
 header {
-  background: black;
-  margin-bottom: 0px;
+  background-color: cadetblue;
+  padding: 10px;
+  text-align: center;
+}
+
+main {
+  background-color: cornsilk;
+}
+
+footer {
+  background-color: cadetblue;
+  padding: 10px;
 }
 
 img {
-  padding: 10px 0 0 10px;
+  width: 100%;
 }
 
-h1 {
-  color: white;
-  padding: 5px 0px 5px 10px;
-  font-size: 36px;
+/* Create contrasts */
+#portfolio {
+  background-color: cadetblue;
 }
 
-nav {
-  border-top: 1px solid white;
-  height: 50px;
+#portfolio h2 {
+  text-align: center;
+  border-bottom: 0px;
+  border-style: solid;
+  margin: 0px;
+}
+
+#portfolio .group {
+  margin: 0px 0px 20px 0px;
+  border-style: solid;
+}
+
+#portfolio .group .item {
+  border-style: solid;
+}
+
+/* Mobile layout */
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.item {
+  flex: 1;
+  align-self: center;
+  margin: 10px;
   padding: 10px;
-  font-size: 24px;
-  color: #fff;
 }
 
-/*----------------Main styling-------------*/
+/* Desktop - allow rows and make about me list spaced better */
+@media all and (min-width: 800px) {
 
-main {
-  background-color: rgb(141, 0, 0);
-  color: white;
-  margin: 0;
-  padding-top: 10px;
-}
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
 
-hr {
-  background-color: black;
-  border: 1px black solid;
-}
+  .group {
+    flex-direction: row;
+  }
 
-main h2, main h3, main p {
-  padding-left: 10px;
-}
-
-ol {
-  margin-bottom: 0px;
-  padding-bottom: 10px;
-}
-
-main p, main li {
-  font-size: 14px;
-}
-
-/*--------------Footer styling-------------------*/
-footer {
-  background-color: black;
-  color: white;
-  padding: 10px;
+  .padded-list {
+    padding-left: 10%;
+  }
 }

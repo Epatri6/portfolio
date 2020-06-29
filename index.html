@@ -1,62 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patrick's Portfolio</title>
     <!--Linked for consistency across web browsers-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css"/>
     <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <div>
-      <!--              Profile picture and navigation          -->
-      <header>
-        <!--Picture-->
-        <img src="images/Profile_Picture.png" alt="Profile Picture" width="200">
-        <!-- Name -->
+</head>
+<body>
+    <!--                 Profile Picture and Intro                   -->
+    <header>
         <h1>Patrick Easter</h1>
-        <!--Links to parts of webpage-->
-        <nav>
-          <a href="#intro">Intro</a> | 
-          <a href="#about">About Me</a> | 
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
-      <!--                        Intro Section                  -->
-      <main>
-        <article id="intro">
-          <h2>Intro</h2>
-          <!--Name and location-->
-          <p>Hello, my name is Patrick Easter and I live in Richmond, VA.</p>
-          <!--Special traits-->
-          <p>I enjoy solving problems via analytical methods with imaginative twists.</p>
-        </article>
-        <hr>
-      <!--                      About Me Section                 -->
-        <article id="about">
-          <h2>About Me</h2>
-          <!--Development statement-->
-          <p>Logical problems never fail to catch my interest. That's the primary reason I graduated in Philosophy from Virginia Tech. However, writing books or pursuits of a similar nature do not insprire me. Rather, I find great motivation while coding and have thus become a student at Thinkful in hopes of becoming ready for software development.</p>
-          <!--Outside Intrest - Favorite video games list-->
-          <p>Video games have always been a big part of my life and I find game design fascinating. I have tinkered with various game engines such as Unity for the past decade. Working with a small team of artists and musicians, I've developed several small scale projects.</p>
-          <h3>Top 3 Video Games</h3>
-          <ol>
-            <li>Banjo and Kazooie</li>
-            <li>Ratchet and Clank</li>
-            <li>Fire Emblem: Three Houses</li>
-          </ol>
-        </article>
-      </main>
-      <!--                              Contact Section                         -->
-      <footer id="contact">
-        <h3>Contact me:</h3>
-        <ul>
-          <li><a href="https://www.linkedin.com/in/patrick-easter-3a0a481aa/">LinkedIn</a></li>
-          <li><a href="https://github.com/Epatri6">GitHub</a></li>
-          <li>Email: <code><a href="mailto:epatri6@gmail.com">Epatri6@gmail.com</a></code></li>
-        </ul>
-      </footer>
-    </div>
-  </body>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="group">
+                <div class="item">
+                    <img src="images/Profile_Picture.png" alt="Profile Picture" width="200">
+                </div>
+                <div class="item">
+                        <p>Hello, my name is Patrick Easter.</p>
+                        <p>
+                            I am a student in Richmond, VA that enjoys solving problems via analytical methods with imaginative twists. 
+                            Logical problems never fail to catch my interest. That's the primary reason I graduated in Philosophy from Virginia Tech. However, writing books or pursuits of a similar nature do not insprire me. 
+                            Rather, I find great motivation while coding and have thus become a student at Thinkful in hopes of becoming ready for software development.
+                        </p>
+                </div>
+            </div>
+            <!--                        About Me                             -->
+            <div class="group">
+                    <div class="item">
+                        <h2>About Me</h2>
+                        <p>
+                            Video games have always been a big part of my life and I find game design fascinating. 
+                            I have tinkered with various game engines such as Unity for the past decade. 
+                            Working with a small team of artists and musicians, I've developed several small scale projects. 
+                            I hope to utilize my creativity and passion for game design wherever I go.
+                        </p>
+                    </div>
+                    <div class="item padded-list">
+                        <h3>Top 3 Video Games</h3>
+                        <ol>
+                            <li>Banjo and Kazooie</li>
+                            <li>Ratchet and Clank</li>
+                            <li>Fire Emblem: Three Houses</li>
+                        </ol>
+                    </div>
+            </div>
+            <!--                       Portfolio                             -->
+            <section id="portfolio">
+                <h2>Portfolio</h2>
+                <div class="group">
+                    <div class="item">
+                        <img src="images/Grid_Joust.png" alt="Grid Joust Game Icon" width="200">
+                        <h3>Grid Joust</h3>
+                        <p>Action game naivating mazes to hit other players at high speeds</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/placeholder.png" alt="Placeholder Picture" width="200">
+                        <h3>Placeholder</h3>
+                        <p>Something not actually developed</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+            <!--                      Contact Info                           -->
+        <footer id="contact">
+            <h3>Contact me:</h3>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/patrick-easter-3a0a481aa/">LinkedIn</a></li>
+                <li><a href="https://github.com/Epatri6">GitHub</a></li>
+                <li>Email: <code><a href="mailto:epatri6@gmail.com">Epatri6@gmail.com</a></code></li>
+            </ul>
+        </footer>
+    </main>
+</body>
 </html>
