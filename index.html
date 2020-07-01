@@ -9,70 +9,101 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <!--                 Profile Picture and Intro                   -->
+    <!--                         Header and navigation                       -->
     <header>
         <h1>Patrick Easter</h1>
+        <nav>
+            <ul id="menu">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
     </header>
     <main>
         <div class="wrapper">
-            <div class="group">
-                <div class="item">
-                    <img src="images/Profile_Picture.png" alt="Profile Picture" width="200">
-                </div>
-                <div class="item">
-                        <p>Hello, my name is Patrick Easter.</p>
-                        <p>
-                            I am a student in Richmond, VA that enjoys solving problems via analytical methods with imaginative twists. 
-                            Logical problems never fail to catch my interest. That's the primary reason I graduated in Philosophy from Virginia Tech. However, writing books or pursuits of a similar nature do not insprire me. 
-                            Rather, I find great motivation while coding and have thus become a student at Thinkful in hopes of becoming ready for software development.
-                        </p>
-                </div>
-            </div>
-            <!--                        About Me                             -->
-            <div class="group">
+            <!--                        Intro                                -->
+            <section id="home">
+                <div class="group">
                     <div class="item">
-                        <h2>About Me</h2>
-                        <p>
-                            Video games have always been a big part of my life and I find game design fascinating. 
-                            I have tinkered with various game engines such as Unity for the past decade. 
-                            Working with a small team of artists and musicians, I've developed several small scale projects. 
-                            I hope to utilize my creativity and passion for game design wherever I go.
-                        </p>
+                        <img src="images/Profile_Picture.png" alt="Profile Picture" width="200">
                     </div>
-                    <div class="item padded-list">
-                        <h3>Top 3 Video Games</h3>
-                        <ol>
-                            <li>Banjo and Kazooie</li>
-                            <li>Ratchet and Clank</li>
-                            <li>Fire Emblem: Three Houses</li>
-                        </ol>
+                    <div class="item">
+                            <p>Hello, my name is Patrick Easter.</p>
+                            <p>
+                                I am a student in Richmond, VA that enjoys solving problems via analytical methods with imaginative twists. 
+                                Logical problems never fail to catch my interest. That's the primary reason I graduated in Philosophy from Virginia Tech. However, writing books or pursuits of a similar nature do not insprire me. 
+                                Rather, I find great motivation while coding and have thus become a student at Thinkful in hopes of becoming ready for software development.
+                            </p>
                     </div>
-            </div>
+                </div>
+            </section>
+            <!--                        About Me                             -->
+            <section id="about">
+                <div class="group">
+                        <div class="item">
+                            <h2>About Me</h2>
+                            <p>
+                                Video games have always been a big part of my life and I find game design fascinating. 
+                                I have tinkered with various game engines such as Unity for the past decade. 
+                                Working with a small team of artists and musicians, I've developed several small scale projects. 
+                                I hope to utilize my creativity and passion for game design wherever I go.
+                            </p>
+                        </div>
+                        <div class="item">
+                            <h3>Top 3 Video Games</h3>
+                            <ol>
+                                <li>Banjo and Kazooie</li>
+                                <li>Ratchet and Clank</li>
+                                <li>Fire Emblem: Three Houses</li>
+                            </ol>
+                        </div>
+                </div>
+            </section>
             <!--                       Portfolio                             -->
             <section id="portfolio">
                 <h2>Portfolio</h2>
                 <div class="group">
                     <div class="item">
-                        <img src="images/Grid_Joust.png" alt="Grid Joust Game Icon" width="200">
-                        <h3>Grid Joust</h3>
-                        <p>Action game naivating mazes to hit other players at high speeds</p>
+                        <img src="images/placeholder.png" alt="Placeholder Picture" width="200">
+                        <h3>Placeholder</h3>
+                        <p>Something not actually developed</p>
+                        <p>Eventual list of skills and link</p>
                     </div>
                     <div class="item">
                         <img src="images/placeholder.png" alt="Placeholder Picture" width="200">
                         <h3>Placeholder</h3>
                         <p>Something not actually developed</p>
+                        <p>Eventual list of skills and link</p>
                     </div>
                 </div>
             </section>
         </div>
             <!--                      Contact Info                           -->
         <footer id="contact">
-            <h3>Contact me:</h3>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/patrick-easter-3a0a481aa/">LinkedIn</a></li>
-                <li><a href="https://github.com/Epatri6">GitHub</a></li>
-                <li>Email: <code><a href="mailto:epatri6@gmail.com">Epatri6@gmail.com</a></code></li>
-            </ul>
+            <div class="group">
+                <div class="item">
+                    <h3>Contact me:</h3>
+                </div>
+                <div class="item">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/patrick-easter-3a0a481aa/">LinkedIn</a></li>
+                        <li><a href="https://github.com/Epatri6">GitHub</a></li>
+                        <li><code><a href="mailto:epatri6@gmail.com">Epatri6@gmail.com</a></code></li>
+                    </ul>
+                </div>
+            </div>
+            <!--               Contact Form                      -->
+            <form action="https://formspree.io/xqkydozn" method="POST">
+                <label>Name:</label>
+                <input type="text" name="name">
+                <label>Email:</label>
+                <input type="text" name="_replyto">
+                <label>Message:</label>
+                <textarea name="message"></textarea>
+                <button type="submit">Send</button>
+            </form>
         </footer>
     </main>
 </body>
