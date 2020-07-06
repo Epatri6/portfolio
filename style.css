@@ -130,6 +130,10 @@ form textarea {
   padding: 10px;
 }
 
+.item a {
+  margin-right: 10px;
+}
+
 
 /* Desktop Layout */
 @media all and (min-width: 800px) {
